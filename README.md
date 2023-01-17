@@ -30,6 +30,12 @@ So, please follow the steps below in GNS3.
 1. Open the Gns3 application
 2. Go to browse all devices as per the below snapshots
 
+![image](https://user-images.githubusercontent.com/104470002/213036451-698c08c2-a745-47ba-b127-0df38db9f795.png)
+ You can install new appliances on your GNS3 server by using a new template.
+4. Now select Firewall devices under the Firewall devices you have to choose Fortigate qemu, then install
+5. Choose Install the appliance on the Gns3 Vm (recommended) and the click next and next
+![image](https://user-images.githubusercontent.com/104470002/213036831-3d697ed5-291e-48c3-ae76-8bbb79c251e2.png)
+
 
 
 
