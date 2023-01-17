@@ -35,6 +35,35 @@ So, please follow the steps below in GNS3.
                                 ![image](https://user-images.githubusercontent.com/104470002/213036831-3d697ed5-291e-48c3-ae76-8bbb79c251e2.png)
 
 
+Now here you have to keep attention while selecting the images of gns3
+and Fortigate which we have downloaded.
+   • Choose allow custom files first.
+   • Select Gns3 image.
+   • Then select Fortigate image
+   
+   
+   If you want to allow custom files on your computer, you will see a
+message like this. Click "Yes" to allow them.
+![image](https://user-images.githubusercontent.com/104470002/213037264-5ac262e3-82ca-4db3-a137-89e3a930baec.png)
+
+6. Now you have to import gns3 appliance of Fortigate Firewall.
+7. Then select Fortigate Firewall image which you have downloaded from
+the Fortigate official website. Now Fortigate Firewall has been successfully
+install in Gns3 then click next and Ok.
+8. By default Fortigate has no password and username will be admin then
+click finish, then go to Gns3 Firewall option. Nice it has been installed.
+Note :
+Once Fortigate Firewall is installed on GNS3, it will ask for an evaluation
+license. (The free trial is available for 15 days only.)
+![image](https://user-images.githubusercontent.com/104470002/213037543-9b07eff4-0a74-4f9d-a5b1-9597dc1032b5.png)
+
+8. By default Fortigate has no password and username will be admin then
+click finish, then go to Gns3 Firewall option. Nice it has been installed.
+#### Note :
+Once Fortigate Firewall is installed on GNS3, it will ask for an evaluation
+license. (The free trial is available for 15 days only.)
+
+
 
 
 ## Configure management ports of the Fortigate
