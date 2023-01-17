@@ -22,14 +22,12 @@ A firewall is a network security device that monitors and controls incoming and 
 After you download the image, you can visit the Fortigate web-site to download the last image of the firewall https://www.gns3.com/
 marketplace
 1. Go to appliances >> Download Fortigate appliance
-
 ![image](https://user-images.githubusercontent.com/104470002/213035953-a8452948-6627-4b20-a4c8-dfc7fdb34a1e.png)
 
 Now, the installation process for Fortigate Firewall is getting started.
 So, please follow the steps below in GNS3.
 1. Open the Gns3 application
 2. Go to browse all devices as per the below snapshots
-
 ![image](https://user-images.githubusercontent.com/104470002/213036451-698c08c2-a745-47ba-b127-0df38db9f795.png)
  You can install new appliances on your GNS3 server by using a new template.
 4. Now select Firewall devices under the Firewall devices you have to choose Fortigate qemu, then install
