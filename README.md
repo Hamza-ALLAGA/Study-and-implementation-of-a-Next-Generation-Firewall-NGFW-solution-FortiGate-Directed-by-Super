@@ -39,6 +39,8 @@ So, please follow the steps below in GNS3.
 
 Now here you have to keep attention while selecting the images of gns3
 and Fortigate which we have downloaded.
+
+
    • Choose allow custom files first.>>
    • Select Gns3 image.>>
    • Then select Fortigate image
@@ -65,6 +67,16 @@ click finish, then go to Gns3 Firewall option. Nice it has been installed.
 Once Fortigate Firewall is installed on GNS3, it will ask for an evaluation
 license. (The free trial is available for 15 days only.)
 
+
+You will also be asked to provide your registered email address and
+password. You can also use your Fortigate account if you want. See the
+topology I have designed in GNS3 for more information.
+To use the Fortigate Firewall’s GUI, you need to first configure its ma-
+nagement interface. You can do this using the command line.
+![image](https://user-images.githubusercontent.com/104470002/213038202-5dadc32f-b244-4ff2-bf8f-3100375bb41c.png)
+To use the Fortigate Firewall’s GUI, you need to first configure its ma-
+nagement interface. You can do this using the command line.
+[image](https://user-images.githubusercontent.com/104470002/213038301-c13b880c-6547-4401-b651-0810dc4ea3ee.png)
 
 
 
