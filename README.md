@@ -14,5 +14,7 @@ A firewall is a network security device that monitors and controls incoming and 
 
 
 ## Install Fortigate Firewall in Gns3
+1. Go to site https://support.fortinet.com/asset/#/.
+2. Clicks on support >> Vm image 
 
 ## Configure management ports of the Fortigate
