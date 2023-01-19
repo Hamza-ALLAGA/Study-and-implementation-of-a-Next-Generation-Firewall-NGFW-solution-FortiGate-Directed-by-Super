@@ -73,10 +73,9 @@ password. You can also use your Fortigate account if you want. See the
 topology I have designed in GNS3 for more information.
 To use the Fortigate Firewall’s GUI, you need to first configure its ma-
 nagement interface. You can do this using the command line.
-![image](https://user-images.githubusercontent.com/104470002/213038202-5dadc32f-b244-4ff2-bf8f-3100375bb41c.png)
+[image](https://user-images.githubusercontent.com/104470002/213038202-5dadc32f-b244-4ff2-bf8f-3100375bb41c.png)
 To use the Fortigate Firewall’s GUI, you need to first configure its ma-
-nagement interface. You can do this using the command line.
-[image](https://user-images.githubusercontent.com/104470002/213038301-c13b880c-6547-4401-b651-0810dc4ea3ee.png)
+nagement interface. You can do this using the command line.[image](https://user-images.githubusercontent.com/104470002/213038301-c13b880c-6547-4401-b651-0810dc4ea3ee.png)
 
 
 
