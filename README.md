@@ -21,7 +21,7 @@ A firewall is a network security device that monitors and controls incoming and 
 
 After you download the image, you can visit the Fortigate web-site to download the last image of the firewall https://www.gns3.com/
 marketplace
-1. Go to appliances >> Download Fortigate appliance
+      1. Go to appliances >> Download Fortigate appliance
 [image](https://user-images.githubusercontent.com/104470002/213035953-a8452948-6627-4b20-a4c8-dfc7fdb34a1e.png)
 
 Now, the installation process for Fortigate Firewall is getting started.
