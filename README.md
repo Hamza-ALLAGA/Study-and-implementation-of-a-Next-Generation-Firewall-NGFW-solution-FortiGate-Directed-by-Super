@@ -41,9 +41,9 @@ Now here you have to keep attention while selecting the images of gns3
 and Fortigate which we have downloaded.
 
 
-   • Choose allow custom files first.>>
-   • Select Gns3 image.>>
-   • Then select Fortigate image
+    Choose allow custom files first.>>
+     Select Gns3 image.>>
+    Then select Fortigate image
    
    
    If you want to allow custom files on your computer, you will see a
