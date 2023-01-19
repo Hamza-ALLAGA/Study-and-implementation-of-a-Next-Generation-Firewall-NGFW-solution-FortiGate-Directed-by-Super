@@ -28,6 +28,7 @@ Now, the installation process for Fortigate Firewall is getting started.
 So, please follow the steps below in GNS3.
 
 a.  Open the Gns3 application
+
 b. Go to browse all devices as per the below snapshots.
 
 [image](https://user-images.githubusercontent.com/104470002/213036451-698c08c2-a745-47ba-b127-0df38db9f795.png)
