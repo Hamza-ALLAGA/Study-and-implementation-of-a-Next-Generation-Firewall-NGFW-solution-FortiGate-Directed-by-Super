@@ -1,6 +1,5 @@
 # Study and Implementation of a Next Generation Firewall (NGFW) Solution using FortiGate
-
-![FortiGate Logo](fortigate_logo.png)
+![FortiGate Logo](https://example.com/fortigate_logo.png)
 
 ## Abstract
 
