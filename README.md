@@ -1,51 +1,68 @@
 # Study and Implementation of a Next-Generation Firewall (NGFW) Solution using FortiGate
 
+## Table of Contents
+
+- [Abstract](#abstract)
+- [Introduction](#introduction)
+- [Methods](#methods)
+  - [Installation of FortiGate Firewall in GNS3](#installation-of-fortigate-firewall-in-gns3)
+  - [Configuration of Management Ports](#configuration-of-management-ports)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
 ## Abstract
 
-This repository documents an in-depth exploration and practical implementation of a Next-Generation Firewall (NGFW) solution leveraging FortiGate. The abstract succinctly outlines the process of meticulous research and rigorous evaluation of FortiGate NGFW's features and capabilities to ascertain its suitability in addressing the specific security requirements of an organization. The implementation journey encompasses meticulous configuration and deployment of the FortiGate NGFW, followed by meticulous performance testing and evaluation. Moreover, it includes seamless integration into the organization's pre-existing network infrastructure, which entails tasks like establishing granular access control policies, forging security zones, and configuring VPN connections. The abstract also emphasizes the paramount significance of consistent maintenance and proactive monitoring to perpetuate FortiGate NGFW's ongoing efficacy in steadfastly safeguarding the organization's network.
+The abstract of the study and implementation of a Next Generation Firewall (NGFW) solution using FortiGate would describe the process of researching and evaluating the features and capabilities of the FortiGate NGFW to determine its suitability for meeting the specific security needs of an organization. The implementation process would involve configuring and setting up the FortiGate NGFW, testing and evaluating its performance, and integrating it into the organization's existing network infrastructure. This may include implementing access control policies, creating security zones, and setting up VPN connections. The abstract would also mention the ongoing maintenance and monitoring necessary to ensure the continued effectiveness of the FortiGate NGFW in protecting the organization's network.
 
 ## Introduction
 
-A firewall stands as an essential guardian in the realm of network security—a sophisticated network security device that conscientiously monitors and exerts control over incoming and outgoing network traffic, grounded upon a bedrock of preconfigured security rules. It takes on the role of a sentinel, erecting an impenetrable barricade between realms of trust and the uncharted territories of untrusted networks. It strategically positions itself within the digital landscape, frequently securing the demarcation between LAN and WAN networks, enshrining the integrity and security of the network.
-
-![Firewall Diagram](https://user-images.githubusercontent.com/104470002/213031170-03f5b091-ec92-4b17-b2c3-d9a481ffaa81.png)
+A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predefined security rules. It serves as a barrier between a trusted and untrusted network and can be positioned between a LAN and WAN network as per specific requirements to ensure the security of the network.
+![image](https://user-images.githubusercontent.com/104470002/213031170-03f5b091-ec92-4b17-b2c3-d9a481ffaa81.png)
 
 ## Methods
 
-### Install FortiGate Firewall in GNS3
+### Installation of FortiGate Firewall in GNS3
 
-To embark on a voyage of experiential understanding with FortiGate NGFW, follow the path illuminated by these steps:
+1. Go to the [Fortinet Support Portal](https://support.fortinet.com/asset/#/).
+2. Navigate to the "Download / VM Images" section.
+3. Choose the appropriate KVM image for your platform.
+![image](https://user-images.githubusercontent.com/104470002/213034167-2e5f4023-6693-474f-afee-02b62841990f.png)
+4. Visit the [GNS3 Marketplace](https://www.gns3.com/marketplace) to acquire the latest FortiGate appliance image.
+5. Download the FortiGate appliance image from "Appliances."
+![image](https://user-images.githubusercontent.com/104470002/213035953-a8452948-6627-4b20-a4c8-dfc7fdb34a1e.png)
+6. Follow the installation process in GNS3:
+   - Open the GNS3 application.
+   - Browse all devices and select FortiGate qemu for installation.
+   - Choose "Install the appliance on the GNS3 VM" and proceed.
+![image](https://user-images.githubusercontent.com/104470002/213036831-3d697ed5-291e-48c3-ae76-8bbb79c251e2.png)
+7. Pay attention when selecting GNS3 and FortiGate images:
+   - Allow custom files and select GNS3 image, then FortiGate image.
+![image](https://user-images.githubusercontent.com/104470002/213037264-5ac262e3-82ca-4db3-a137-89e3a930baec.png)
+8. Import the FortiGate appliance into GNS3 and proceed with installation.
+9. The default credentials for FortiGate are admin/admin. Finish the installation and enter the GNS3 Firewall option.
+   **Note:** FortiGate will request an evaluation license, available for 15 days.
+![image](https://user-images.githubusercontent.com/104470002/213037543-9b07eff4-0a74-4f9d-a5b1-9597dc1032b5.png)
+10. Provide your registered email address and password. Your FortiGate account can also be used. Explore the designed topology in GNS3 and configure the management interface for accessing FortiGate's GUI.
+![image](https://user-images.githubusercontent.com/104470002/213038202-5dadc32f-b244-4ff2-bf8f-3100375bb41c.png)
 
-1. Begin by venturing forth to the [Fortinet Support Portal](https://support.fortinet.com/asset/#/).
-2. Within the reverberating realms of support, harmonize your intentions with the "Download / VM Images" resonance.
-3. Carefully choose the KVM image intended for your preferred platform of choice.
+### Configuration of Management Ports
 
-![Step 3](https://user-images.githubusercontent.com/104470002/213034167-2e5f4023-6693-474f-afee-02b62841990f.png)
+Configuring the management ports of FortiGate is vital for ensuring seamless operational control and accessibility. Employ the command-line interface to configure IP addresses, subnet masks, and access controls for the management interface.
 
-4. Post the acquisition of the image, set sail towards the FortiGate web-island to secure the latest firewall image from the [GNS3 Marketplace](https://www.gns3.com/marketplace).
-5. Collect the prized FortiGate appliance image within the "Appliances" haven.
+## Getting Started
 
-![Step 5](https://user-images.githubusercontent.com/104470002/213035953-a8452948-6627-4b20-a4c8-dfc7fdb34a1e.png)
+To get started, clone this repository and follow the outlined methods for the installation and configuration of FortiGate NGFW.
 
-6. Enact the installation of FortiGate Firewall in the ethereal GNS3 realm as follows:
-   - Unveil the GNS3 application, a virtual portal to your network aspirations.
-   - Glide over to "Browse all devices," where a panoply of possibilities beckon.
-   - Handpick the Firewall device of your choosing (FortiGate qemu) and install it.
-   - Opt for the recommended voyage, installing the appliance upon the GNS3 VM's hospitable shores.
+## Usage
 
-![Installation Steps](https://user-images.githubusercontent.com/104470002/213036831-3d697ed5-291e-48c3-ae76-8bbb79c251e2.png)
+This repository serves as a guide for studying, implementing, and configuring a Next-Generation Firewall (NGFW) solution using FortiGate. Explore the documented methods and adapt them to your specific requirements.
 
-7. Infuse vitality into your endeavor by importing the FortiGate Firewall appliance and steering through the installation tempest.
-8. At the outset, the guardian FortiGate is bereft of a secret passphrase; the username "admin" opens its gates. Secure the configuration and navigate onward to the GNS3 Firewall realm.
-   **Note:** Upon installation, FortiGate Firewall extends an invitation for an evaluation license, offering a 15-day sojourn into its capabilities.
+## License
 
-![Evaluation License](https://user-images.githubusercontent.com/104470002/213037543-9b07eff4-0a74-4f9d-a5b1-9597dc1032b5.png)
+This project is licensed under the [MIT License](LICENSE).
 
-9. Chart a course for configuring management interfaces—both a voyage of command-line prowess and graphical elegance.
-   - Enlist the command-line interface as your compass, fashioning the management interface with IP addresses, subnet masks, and guardianship through access controls.
+## Acknowledgements
 
-![Management Interface Configuration](https://user-images.githubusercontent.com/104470002/213038301-c13b880c-6547-4401-b651-0810dc4ea3ee.png)
-
-## Configure Management Ports of FortiGate
-
-The architectural underpinning of FortiGate's efficacy lies in the judicious configuration of management ports. Such a configuration furnishes the FortiGate NGFW's management interface with a pedestal of operational seamlessness—facilitating unwavering control and unfettered accessibility.
+We extend our gratitude to the Fortinet community and the GNS3 development team for their valuable contributions and resources that have made this endeavor possible.
