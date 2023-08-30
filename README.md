@@ -1,60 +1,55 @@
-# Study-and-implementation-of-a-Next-Generation-Firewall(NGFW) solution-FortiGate
+# Study and Implementation of a Next Generation Firewall (NGFW) Solution using FortiGate
 
-# Abstract
+![FortiGate Logo](fortigate_logo.png)
 
-The abstract of the study and implementation of a Next Generation Firewall (NGFW) solution using FortiGate would describe the process of researching and evaluating the features and capabilities of the FortiGate NGFW to determine its suitability for meeting the specific security needs of an organization. The implementation process would involve configuring and setting up the FortiGate NGFW, testing and evaluating its performance, and integrating it into the organization's existing network infrastructure. This may include implementing access control policies, creating security zones, and setting up VPN connections. The abstract would also mention the ongoing maintenance and monitoring necessary to ensure the continued effectiveness of the FortiGate NGFW in protecting the organization's network.
+## Abstract
 
-# Introduction
+This repository documents the comprehensive study and practical implementation of a Next Generation Firewall (NGFW) solution using FortiGate. The abstract outlines the process of researching, evaluating, and deploying the FortiGate NGFW to meet the specific security needs of an organization. The implementation involves meticulous configuration, performance testing, and seamless integration into the existing network infrastructure. This includes the establishment of access control policies, creation of security zones, and implementation of VPN connections. The abstract also emphasizes the necessity of continuous maintenance and monitoring to sustain the FortiGate NGFW's effectiveness in safeguarding the organization's network.
 
-A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predefined security rules. It serves as a barrier between a trusted and untrusted network and can be positioned between a LAN and WAN network as per specific requirements to ensure the security of the network.
-![image](https://user-images.githubusercontent.com/104470002/213031170-03f5b091-ec92-4b17-b2c3-d9a481ffaa81.png)
+## Table of Contents
 
-# Methods
+- [Abstract](#abstract)
+- [Introduction](#introduction)
+- [Methods](#methods)
+  - [Installation of FortiGate Firewall in GNS3](#installation-of-fortigate-firewall-in-gns3)
+  - [Configuration of Management Ports](#configuration-of-management-ports)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-## Install Fortigate Firewall in Gns3
-1. Go to site https://support.fortinet.com/asset/#/.
-2. Clicks on support >> Download /VM Images 
-4. Choose select platform KVM
-![image](https://user-images.githubusercontent.com/104470002/213034167-2e5f4023-6693-474f-afee-02b62841990f.png)
+## Introduction
 
-After you download the image, you can visit the Fortigate web-site to download the last image of the firewall https://www.gns3.com/
-marketplace
-  1. Go to appliances >> Download Fortigate appliance
-![image](https://user-images.githubusercontent.com/104470002/213035953-a8452948-6627-4b20-a4c8-dfc7fdb34a1e.png)
+In the realm of network security, a firewall stands as a sentinel – a network security device that orchestrates the control of incoming and outgoing network traffic based on meticulously defined security rules. The mantle of responsibility it bears is that of a guardian, positioned as a stalwart sentinel between networks of trust and those untrusted. As a crucial cornerstone of network security, a firewall fortifies the safety of an organization's digital domains.
 
-Now, the installation process for Fortigate Firewall is getting started. So, please follow the steps below in GNS3.
+![Firewall Illustration](firewall_illustration.png)
 
-a. Open the Gns3 application
+## Methods
 
-b. Go to browse all devices as per the below snapshots.
-![image](https://user-images.githubusercontent.com/104470002/213036451-698c08c2-a745-47ba-b127-0df38db9f795.png)
+### Installation of FortiGate Firewall in GNS3
 
-You can install new appliances on your GNS3 server by using a new template.
-4. Now select Firewall devices under the Firewall devices you have to choose Fortigate qemu, then install
-5. Choose Install the appliance on the Gns3 Vm (recommended) and the click next and next
-![image](https://user-images.githubusercontent.com/104470002/213036831-3d697ed5-291e-48c3-ae76-8bbb79c251e2.png)
+To replicate and probe the capacities of the FortiGate NGFW within a controlled environment, adhere to the following steps:
 
-Now here you have to keep attention while selecting the images of gns3 and Fortigate which we have downloaded.
-- Choose allow custom files first.
-- Select Gns3 image.
-- Then select Fortigate image
+1. Begin your journey by navigating to the [Fortinet Support Portal](https://support.fortinet.com/asset/#/).
+2. In the sprawling expanse of options, seek out **Support** and proceed to the den of **Download / VM Images**.
+3. Delve into the array of platform options, and make your selection of the coveted KVM image for FortiGate. 
 
-If you want to allow custom files on your computer, you will see a message like this. Click "Yes" to allow them.
-![image](https://user-images.githubusercontent.com/104470002/213037264-5ac262e3-82ca-4db3-a137-89e3a930baec.png)
+![Step 3](step_3_image_link.png)
 
-6. Now you have to import gns3 appliance of Fortigate Firewall.
-7. Then select Fortigate Firewall image which you have downloaded from the Fortigate official website. Now Fortigate Firewall has been successfully installed in Gns3 then click next and Ok.
-8. By default, Fortigate has no password and username will be admin then click finish, then go to Gns3 Firewall option. Nice, it has been installed.
-Note: Once Fortigate Firewall is installed on GNS3, it will ask for an evaluation license. (The free trial is available for 15 days only.)
-![image](https://user-images.githubusercontent.com/104470002/213037543-9b07eff4-0a74-4f9d-a5b1-9597dc1032b5.png)
+4. Embark on the pilgrimage of downloading the chosen image. Upon obtaining the artifact, traverse to the [GNS3 Marketplace](https://www.gns3.com/marketplace).
+5. At this junction, perform the summoning ritual – importing the FortiGate appliance image into the GNS3 realm. Caution shall be exercised in selecting the compatible and befitting image. 
 
-By default, Fortigate has no password and username will be admin then click finish, then go to Gns3 Firewall option. Nice, it has been installed.
-**Note:** Once Fortigate Firewall is installed on GNS3, it will ask for an evaluation license. (The free trial is available for 15 days only.)
+![Step 5](step_5_image_link.png)
 
-You will also be asked to provide your registered email address and password. You can also use your Fortigate account if you want. See the topology I have designed in GNS3 for more information. To use the Fortigate Firewall’s GUI, you need to first configure its management interface. You can do this using the command line.
-![image](https://user-images.githubusercontent.com/104470002/213038202-5dadc32f-b244-4ff2-bf8f-3100375bb41c.png)
+6. Bestow configuration upon the appliance, gifting it with network connections and an allocation of resources befitting its stature.
 
-To use the Fortigate Firewall’s GUI, you need to first configure its management interface. You can do this using the command line.
-![image](https://user-images.githubusercontent.com/104470002/213038301-c13b880c-6547-4401-b651-0810dc4ea3ee.png)
+### Configuration of Management Ports
 
-## Configure Management Ports of the Fortigate
+The bastion that is the FortiGate's management interface can be fortified through the incantations of the Command Line Interface (CLI):
+
+```shell
+config system interface
+edit mgmt
+set ip *management_IP_address* *subnet_mask*
+set allowaccess https ssh ping http
+end
