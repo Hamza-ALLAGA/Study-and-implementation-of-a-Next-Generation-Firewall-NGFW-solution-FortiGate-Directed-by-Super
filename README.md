@@ -1,4 +1,5 @@
 # Study and Implementation of a Next Generation Firewall (NGFW) Solution using FortiGate
+
 ![FortiGate Logo](https://example.com/fortigate_logo.png)
 
 ## Abstract
@@ -21,7 +22,7 @@ This repository documents the comprehensive study and practical implementation o
 
 In the realm of network security, a firewall stands as a sentinel – a network security device that orchestrates the control of incoming and outgoing network traffic based on meticulously defined security rules. The mantle of responsibility it bears is that of a guardian, positioned as a stalwart sentinel between networks of trust and those untrusted. As a crucial cornerstone of network security, a firewall fortifies the safety of an organization's digital domains.
 
-![Firewall Illustration](firewall_illustration.png)
+![Firewall Illustration](https://example.com/firewall_illustration.png)
 
 ## Methods
 
@@ -33,12 +34,12 @@ To replicate and probe the capacities of the FortiGate NGFW within a controlled 
 2. In the sprawling expanse of options, seek out **Support** and proceed to the den of **Download / VM Images**.
 3. Delve into the array of platform options, and make your selection of the coveted KVM image for FortiGate. 
 
-![Step 3](step_3_image_link.png)
+![Step 3](https://example.com/step_3_image_link.png)
 
 4. Embark on the pilgrimage of downloading the chosen image. Upon obtaining the artifact, traverse to the [GNS3 Marketplace](https://www.gns3.com/marketplace).
 5. At this junction, perform the summoning ritual – importing the FortiGate appliance image into the GNS3 realm. Caution shall be exercised in selecting the compatible and befitting image. 
 
-![Step 5](step_5_image_link.png)
+![Step 5](https://example.com/step_5_image_link.png)
 
 6. Bestow configuration upon the appliance, gifting it with network connections and an allocation of resources befitting its stature.
 
